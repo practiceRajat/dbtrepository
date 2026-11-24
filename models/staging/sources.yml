@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bank_raw
+    description: Raw daily extracts from the core banking system
+    database: BANK_DB
+    schema: BRONZE
+    tables:
+      - name: raw_customers
+        description: Daily customer extract, loaded as received
+      - name: raw_accounts
+        description: Daily account extract, loaded as received
